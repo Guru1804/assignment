@@ -191,6 +191,23 @@ figure figcaption{
     border-color:  red;
 }
 
+#thankyou{
+    padding: 5px;
+    text-align: center;
+}
+
+#top{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #007298;
+    color: azure;
+    padding: 4px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom:10px;
+    
+}
 /* #end{
     background-color: azure;
     display: flex;

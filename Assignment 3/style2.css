@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(128, 128, 128, 0.712);
+    box-sizing: border-box;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.a1{
+    text-align: center;
+    background-color: rgba(65, 188, 222, 0.721);
+    color: white;
+    padding: 15px;
+    font-size: 36px;
+}
+#link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#link div{
+    border: black 1px solid;
+    margin-top: 10px;
+    width: 15%;   
+}
+#link div a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    color: rgba(65, 188, 222, 0.721);
+    background-color:white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#link div a:hover{
+    background-color: rgba(65, 188, 222, 0.721);
+    color:white;
+    transition: 0.3s; 
+}
+.pic{
+    /* min-width: 20vw;
+    max-width: 30vw;
+    min-height: 40vh;
+    margin: 5px; */
+    width:100%;
+    height: auto;
+}
+#group-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin:10px;
+    padding: 10px;
+    background-color: grey;
+    width: auto;
+    height: auto;
+    align-items: stretch;
+    font-size: 14px;
+}
+.group-items {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content:space-between ;
+    width: 500px;
+    background-color: white;
+    flex: 1;
+    padding: 15px;
+    margin: 4px;
+}
+.group-items p{
+    background-color: white;
+}
+.group-items button{
+    padding: 6px;
+}
+.s1{
+    flex: 1;
+}
+.s2{
+    flex: 1;
+}
+.s3{
+    flex: 2;
+}
+#bottom{
+    font-size: 20px;
+}
+.img {
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+@media (max-width:581px) {
+    #group-container{
+        flex-direction: column;
+    }
+    #main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #link div{
+        border: black 1px solid;
+        margin-top: 10px;
+        width: 25%;
+        justify-content: center; 
+        margin-right: 5px;  
+    }
+    
+}
+
+@media (max-width:480px) {
+    .group-items {
+        width: auto;
+    }
+    #link div a{
+        font-size: 8px;
+        width: 100%;
+        height: max-content;
+        
+    }
+    #link div{
+        width: 18%;
+        margin-bottom: 8px;
+    }
+    #bottom{
+        font-size: 12px;
+    }
+    #head{
+        font-size: 20px;
+    }
+    
+}

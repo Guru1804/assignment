@@ -4,13 +4,16 @@ const uname=document.querySelector('#name');
 const email=document.querySelector('#Email');
 const number =document.querySelector('#phno');
 const message=document.querySelector('#message');
+let thank=document.getElementById("thankyou");
 // creating a event listener for the form submission event
 form.addEventListener('submit',(e)=>{
     if(!validateInputs()){
         e.preventDefault();
+        thank.innerText='';
     }
     else{
-    alert(`Thank you.Your message has been saved`)
+        thank.innerText=`Thank You ${uname.value}`
+        alert(`Thank you.Your message has been saved`)
     }
     e.preventDefault();
     
