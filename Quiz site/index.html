@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!--we use this div to show the instructions of the quiz -->
+    <div id="first">
+        <h1 id="f1">Hi Welcome to the Quiz</h1>
+        <h3 id="f2">This quiz is about A.P.J.Abdul Kalam</h3>
+        <p id="f3">A.P.J. Abdul Kalam was a prominent Indian scientist who served as the 11th President of India from 2002 to 2007. Renowned for his pivotal role in the nation’s civilian space programme and military missile development, he was known as the Missile Man of India</p>
+        <br>
+        <p>In this quiz you will have 10 questions with Four options each.You can click the option to know whether your answer is correct or wrong.Your Total score will be displayed at the end of the quiz.You can take time to research and start the quiz by selecting the Start button below.</p>
+        <button id="start">START</button>
+</div>
+    <!-- this is used to display the quiz questions and option -->
+    <div class="app" id="app">
+        <div id="heads">
+            <h1>Kalam Quiz</h1>
+            <h1 id="score">score</h1>
+        </div>
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <h3 id="question-det"></h3>
+            <!-- has the options field and we will manipulate it using javascript to options -->
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <!-- this is used to go for the next question  and at the end used for play again also -->
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+</body>
+</html>

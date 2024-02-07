@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#057857
+}
+/* setting up the quiz layout  */
+.app{
+    display: none;
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 5rem;
+
+}
+.app h1,#f1{
+    font-weight: 25px;
+    color: #025f84;
+    font-weight: 700;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px ;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2,#f2{
+    font-size: 18px;
+    color: #025f84;
+    font-weight: 500;
+}
+#f3{
+    margin-top: 20px;
+}
+/* used to place the heading and score  */
+#heads{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* styling the options button */
+.btn{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #057857;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn:hover:not([disabled]){
+    background-color: #00000085;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: not-allowed;
+}
+/* here we style the score that will be displayedin the quiz. */
+#score{
+    display: none;
+    font-size: 20px;
+    background-color: #057857;
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px 0px 1.5px black;   
+}
+#question-det{
+    font-size: 18px;
+    color: #333;
+    margin: 10px auto;
+}
+#next-btn{
+    width: 100%;
+    background-color: aquamarine;
+    padding: 15px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+}
+/* this will highlight the correct option */
+.correct{
+    background-color: #19df19;
+}
+/* this will highlight the incorrect option if selected*/
+.incorrect{
+    background: #eb1219;
+}
+#start{
+    display: block;
+    text-align: center;  
+    width: 50%;  
+    margin: 25px auto 5px;
+    background-color: #025f84;
+    color: #fff;
+}
+/* styling for the instruction page */
+#first{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+}
